@@ -1,0 +1,18 @@
+query getCountry {
+  countries {
+    name
+    native,
+    continent {
+      code,
+      name
+    },
+    code,
+    capital
+    emoji
+    currency
+    languages {
+      code
+      name
+    }
+  }
+}
