@@ -30,7 +30,6 @@ const CountryDetail: React.FunctionComponent<{
   return (
     <Grid>
     <Grid.Col xs={12} md={6} lg={4} key={`${data?.country.name}`} p={5}>
-    <Link href={`/country/${data?.country.name}`} passHref>
       <Card component="a" style={{ textDecoration: 'none' }}>
         <Card.Section>
           <Title order={3}>{data?.country.name}</Title>
@@ -49,8 +48,7 @@ const CountryDetail: React.FunctionComponent<{
           <strong>Native Name:</strong> {data?.country.native}
         </Text>
       </Card>
-    </Link>
-  </Grid.Col>
+      </Grid.Col>
   </Grid>
   );
 };
